@@ -1,0 +1,13 @@
+/Users/Anastasiya/IdeaProjects/SpringBootRestService/src/main/java/springBootRestService/entities/Message.java
+/Users/Anastasiya/IdeaProjects/SpringBootRestService/src/main/java/springBootRestService/repos/UserRepo.java
+/Users/Anastasiya/IdeaProjects/SpringBootRestService/src/main/java/springBootRestService/payments/PaymentRequest.java
+/Users/Anastasiya/IdeaProjects/SpringBootRestService/src/main/java/springBootRestService/config/MvcConfig.java
+/Users/Anastasiya/IdeaProjects/SpringBootRestService/src/main/java/springBootRestService/exceptions/NotFoundException.java
+/Users/Anastasiya/IdeaProjects/SpringBootRestService/src/main/java/springBootRestService/controllers/PaymentController.java
+/Users/Anastasiya/IdeaProjects/SpringBootRestService/src/main/java/springBootRestService/entities/Role.java
+/Users/Anastasiya/IdeaProjects/SpringBootRestService/src/main/java/springBootRestService/Application.java
+/Users/Anastasiya/IdeaProjects/SpringBootRestService/src/main/java/springBootRestService/entities/User.java
+/Users/Anastasiya/IdeaProjects/SpringBootRestService/src/main/java/springBootRestService/repos/MessageRepo.java
+/Users/Anastasiya/IdeaProjects/SpringBootRestService/src/main/java/springBootRestService/controllers/RegistrationController.java
+/Users/Anastasiya/IdeaProjects/SpringBootRestService/src/main/java/springBootRestService/payments/BaseResponse.java
+/Users/Anastasiya/IdeaProjects/SpringBootRestService/src/main/java/springBootRestService/config/WebSecurityConfig.java

@@ -1,0 +1,11 @@
+springBootRestService/payments/PaymentRequest.class
+springBootRestService/entities/Role.class
+springBootRestService/entities/Message.class
+springBootRestService/entities/User.class
+springBootRestService/repos/UserRepo.class
+springBootRestService/exceptions/NotFoundException.class
+springBootRestService/Application.class
+springBootRestService/repos/MessageRepo.class
+springBootRestService/payments/BaseResponse.class
+springBootRestService/controllers/PaymentController.class
+springBootRestService/controllers/RegistrationController.class
