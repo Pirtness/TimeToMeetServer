@@ -79,7 +79,7 @@ public class ImageController {
             fileRepo.save(fileModel);
             return "success";
         } catch (Exception e) {
-            return "Fail";
+            return e.getMessage();
         }
     }
 
@@ -97,7 +97,8 @@ public class ImageController {
             File file = optionalFile.get();
             return ResponseEntity.ok().header(HttpHeaders.CONTENT_DISPOSITION," ").body(file.getPic());
         }
-        return ResponseEntity.status(404).body(null);
+        //return ResponseEntity.status(404).body(null);
+        return null;
     }
 
 }

@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import springBootRestService.entities.Message;
-import springBootRestService.entities.Role;
 import springBootRestService.entities.User;
 import springBootRestService.exceptions.NotFoundException;
 import springBootRestService.repos.MessageRepo;
