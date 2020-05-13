@@ -16,9 +16,9 @@ public class User {
     private String username;
     private String password;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name = "user_id")
-    private List<Event> events;
+//    @ManyToMany(fetch = FetchType.EAGER)
+//    @JoinColumn(name = "user_id")
+//    private List<Event> events;
 
 //    @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
 //    @CollectionTable(name = "usr_role", joinColumns = @JoinColumn(name = "usr_id"))
