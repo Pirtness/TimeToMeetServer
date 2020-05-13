@@ -45,13 +45,18 @@ public class RegistrationController {
             return result;
         }
 
-        user = new User();
-        user.setUsername(username);
-        user.setPassword(password);
+        try {
+            user = new User();
+            user.setUsername(username);
+            user.setPassword(password);
 
-        userRepo.save(user);
-        result.put("result", "success");
-        return result;
+            userRepo.save(user);
+            result.put("result", "success");
+            return result;
+        } catch (Exception e) {
+            result.put("result", e.getMessage());
+            return result;
+        }
     }
 
 
