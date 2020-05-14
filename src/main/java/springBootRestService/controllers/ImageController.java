@@ -83,11 +83,11 @@ public class ImageController {
         }
     }
 
-    @JsonView(View.FileInfo.class)
-    @GetMapping("api/file/all")
-    public Iterable<File> getListFiles() {
-        return fileRepo.findAll();
-    }
+//    @JsonView(View.FileInfo.class)
+//    @GetMapping("api/file/all")
+//    public Iterable<File> getListFiles() {
+//        return fileRepo.findAll();
+//    }
 
 
     @GetMapping("api/file/{id}")
