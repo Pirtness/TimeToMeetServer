@@ -34,7 +34,7 @@ public class EventsController {
     }
 
     @PutMapping("/change/{id}")
-    public Event changeEvent(@PathVariable Long id, @RequestParam Event newEvent) {
+    public Event changeEvent(@PathVariable Long id, @RequestBody Event newEvent) {
         Optional<Event> event = eventRepo.findById(id);
         if (event.isPresent()) {
             event.get().change(newEvent);
