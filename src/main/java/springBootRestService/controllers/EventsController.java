@@ -28,15 +28,19 @@ public class EventsController {
     }
 
     @PostMapping("/create")
-    public void createEvent(@RequestParam Event event) {
+    public Event createEvent(@RequestParam Event event) {
         eventRepo.save(event);
+        return event;
     }
 
     @PutMapping("/change/{id}")
-    public void changeEvent(@PathVariable Long id, @RequestParam Event newEvent) {
+    public Event changeEvent(@PathVariable Long id, @RequestParam Event newEvent) {
         Optional<Event> event = eventRepo.findById(id);
-        if (event.isPresent())
+        if (event.isPresent()) {
             event.get().change(newEvent);
+            return event.get();
+        }
+        return null;
     }
 
     @DeleteMapping("/delete/{id}")
