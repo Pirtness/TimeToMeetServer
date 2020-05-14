@@ -28,7 +28,7 @@ public class EventsController {
     }
 
     @PostMapping("/create")
-    public Event createEvent(@RequestParam Event event) {
+    public Event createEvent(@RequestBody Event event) {
         eventRepo.save(event);
         return event;
     }
