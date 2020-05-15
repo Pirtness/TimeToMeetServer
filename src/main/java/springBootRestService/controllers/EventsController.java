@@ -26,9 +26,11 @@ public class EventsController {
     }
 
     @GetMapping("/get_all/{username}")
-    public Iterable<Event> getEventsOfUser(@PathVariable String username) {
+    public List<Event> getEventsOfUser(@PathVariable String username) {
         Iterable<Event> events = eventRepo.findByUsername(username);
-        return events;
+        List<Event> list = new ArrayList<>();
+        events.forEach(list::add);
+        return list;
     }
 
     @PostMapping("/create")
