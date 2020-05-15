@@ -6,6 +6,8 @@ import springBootRestService.entities.Event;
 import springBootRestService.repos.EventRepo;
 
 import javax.persistence.Lob;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -16,9 +18,11 @@ public class EventsController {
     private EventRepo eventRepo;
 
     @GetMapping("/get_all")
-    public Iterable<Event> getEvents() {
+    public List<Event> getEvents() {
         Iterable<Event> events = eventRepo.findAll();
-        return events;
+        List<Event> list = new ArrayList<>();
+        events.forEach(list::add);
+        return list;
     }
 
     @GetMapping("/get_all/{username}")
