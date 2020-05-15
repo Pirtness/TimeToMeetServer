@@ -17,6 +17,15 @@ public class EventsController {
     @Autowired
     private EventRepo eventRepo;
 
+    @GetMapping("/{id}")
+            public Event getEvent(@PathVariable Long id) {
+        Optional<Event> event = eventRepo.findById(id);
+        if (event.isPresent()) {
+            return event.get();
+        }
+        return null;
+    }
+
     @GetMapping("/get_all")
     public List<Event> getEvents() {
         Iterable<Event> events = eventRepo.findAll();
