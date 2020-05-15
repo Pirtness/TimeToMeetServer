@@ -52,7 +52,10 @@ public class EventsController {
     public Event changeEvent(@PathVariable Long id, @RequestBody Event newEvent) {
         Optional<Event> event = eventRepo.findById(id);
         if (event.isPresent()) {
-            event.get().change(newEvent);
+            Event e = event.get();
+            e.change(newEvent);
+            eventRepo.save(e);
+            eventRepo.flush();
             return event.get();
         }
         return null;
