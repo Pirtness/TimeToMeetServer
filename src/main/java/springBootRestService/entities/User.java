@@ -1,9 +1,6 @@
 package springBootRestService.entities;
 
 import javax.persistence.*;
-import java.util.Collection;
-import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "usr")
@@ -15,15 +12,6 @@ public class User {
 
     private String username;
     private String password;
-
-//    @ManyToMany(fetch = FetchType.EAGER)
-//    @JoinColumn(name = "user_id")
-//    private List<Event> events;
-
-//    @ElementCollection(targetClass = Role.class, fetch = FetchType.EAGER)
-//    @CollectionTable(name = "usr_role", joinColumns = @JoinColumn(name = "usr_id"))
-//    @Enumerated(EnumType.STRING)
-//    private Set<Role> roles;
 
     public long getId() {
         return id;
